@@ -1,3 +1,4 @@
+// import { Component, OnInit, EventEmitter, Output } from '@angular/core';
 import { Component, OnInit } from '@angular/core';
 
 @Component({
@@ -7,6 +8,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class SearchBarComponent implements OnInit {
 
+  // @Output() submitted = new EventEmitter<string>();
   term = ''; 
 
   constructor() { }
@@ -14,8 +16,11 @@ export class SearchBarComponent implements OnInit {
   ngOnInit(): void {
   }
 
-  onFormSubmit(event: any) {
+  // onFormSubmit(term: any) {
+    onFormSubmit(event: any) {
     event.preventDefault();
+    console.log(this.term);
+    // this.submitted.emit(this.term); 
   }
   
 }

@@ -6,5 +6,16 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'wsearch';
+  onTerm(term: string) {
+  // onTerm(event: Event) {
+    console.log("search term", term); 
+    // console.log("search term", event);
+    // const target = event.target as HTMLInputElement;
+    // const parsedValue = parseInt(target.value);
+ 
+    // if (!isNaN(parsedValue)) {
+	  //  this.length = parsedValue;
+    //  } 
+
+  }
 }
